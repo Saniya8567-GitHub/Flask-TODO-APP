@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}To-Do App{% endblock %}</title>
+    <title>Productivity Planner</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='CSS/style.css') }}"
@@ -12,7 +12,7 @@
   <body>
     <header>
       <div class="container">
-        <h1>To-Do App</h1>
+        <h1>Productivity Planner</h1>
         <nav>
           <a href="{{ url_for('tasks.view_tasks') }}">Home</a>
           {% if 'user' in session %}
@@ -40,7 +40,7 @@
 
     <footer>
       <div class="container">
-        <p>&copy; 2025 To-Do App. All rights reserved.</p>
+        <p>&copy;© 2025 Productivity Planner. Built by Saniya Mulla</p>
       </div>
     </footer>
   </body>
